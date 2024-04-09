@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "Poppins";
+  src: url('../../assets/fonts/Poppins-Bold.ttf') format('truetype');
+}
+
+body {
+  background-color: #DBDBDB;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  margin: 50px 400px 0px 400px;
+  padding: 40px 20px;
+  width: 50%;
+
+  color: #757575;
+  background-color: white;
+  border-radius: 35px;
+  border-bottom-right-radius: 175px;
+}

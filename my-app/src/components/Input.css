@@ -1,0 +1,29 @@
+.form_container {
+  display: flex;
+}
+
+.dayContainer, .monthContainer, .yearContainer {
+  margin: 0px 50px 0px 0px;
+}
+
+.inputDay, .inputMonth, .inputYear {
+  height: 2.5rem;
+  width: 100%;
+
+  border-radius: 5px;
+  font-size: 1.5rem;
+  border: 1px solid #dbdbdb;
+  padding: 1px 2px 1px 15px;
+}
+
+.button {
+  border-radius: 30px;
+  border-style: none;
+  background-color: #854CFF;
+  color: white;
+}
+
+.Error {
+  color: #FF5757;
+  font-size: 10px;
+}
