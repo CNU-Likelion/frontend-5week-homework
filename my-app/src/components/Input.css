@@ -22,3 +22,8 @@
   background-color: #854CFF;
   color: white;
 }
+
+.Error {
+  color: #FF5757;
+  font-size: 10px;
+}

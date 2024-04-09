@@ -10,15 +10,16 @@ function Input() {
   const today = new Date();
   const todayYear = today.getFullYear();
 
-  const [ dayError, setDayError ] = useState('');
-  const [ monthError, setMonthError ] = useState('');
-  const [ yearError, setYearError ] = useState('');
+  const [ dayError, setDayError ] = useState();
+  const [ monthError, setMonthError ] = useState();
+  const [ yearError, setYearError ] = useState();
 
   const [ date, setDate ] = useState(); 
 
   const onClickButton = (e) => {
     e.preventDefault();
     setDate({ day, month, year });
+    // console.log(`inputMonth${ setMonthError ? 'error' : '' }`);
   }
 
   const onChangeDayHandler = (e) => {
