@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react';
+import React, { Component, useEffect, useState } from 'react';
 
 function Input() {
 
@@ -6,16 +6,18 @@ function Input() {
   const [ month, setMonth ] = useState('');
   const [ year, setYear ] = useState('');
 
+  const today = new Date();
+  const todayYear = today.getFullYear();
+
   const [ dayError, setDayError ] = useState('');
   const [ monthError, setMonthError ] = useState('');
   const [ yearError, setYearError ] = useState('');
 
+  const [ date, setDate ] = useState(); 
 
   const onClickButton = (e) => {
     e.preventDefault();
-    console.log(day);
-    console.log(month);
-    console.log(year);
+    setDate({ day, month, year });
   }
 
   const onChangeDayHandler = (e) => {
@@ -25,9 +27,9 @@ function Input() {
     if (dayValue === '') {
       setDayError('The field is required');
     }
-    else if (dayValue < 1 || dayValue > 32) {
-      setDayError('The field is required');
-    }
+    else if (dayValue < 1 || dayValue > 31) {
+      setDayError('Must be a valid day');
+    } 
   }
 
   const onChangeMonthHandler = (e) => {
@@ -37,8 +39,8 @@ function Input() {
     if (monthValue === '') {
       setMonthError('The field is required');
     }
-    else if (monthValue < 1 || monthValue > 13) {
-      setMonthError('The field is required');
+    else if (monthValue < 1 || monthValue > 12) {
+      setMonthError('Must be a valid month');
     }
   }
 
@@ -49,8 +51,8 @@ function Input() {
     if (yearValue === '') {
       setYearError('The field is required');
     }
-    else if (yearValue < 0 || yearValue > 2025) {
-      setYearError('The field is required');
+    else if (yearValue < 0 || yearValue > todayYear) {
+      setYearError('Must be in the past');
     }
   }
 
@@ -66,7 +68,7 @@ function Input() {
             value={day}
             onChange={onChangeDayHandler}
           />
-          {dayError && <span>{dayError}</span>}
+          {dayError && <p className='Error'>{dayError}</p>}
         </div>
 
         <div className='monthContainer'>
@@ -77,7 +79,7 @@ function Input() {
             value={month}
             onChange={onChangeMonthHandler}
           />
-          {monthError && <span>{monthError}</span>}
+          {monthError && <p className='Error'>{monthError}</p>}
         </div>
 
         <div className='yearContainer'>
@@ -88,12 +90,15 @@ function Input() {
             value={year}
             onChange={onChangeYearHandler}
           />
-          {yearError && <span>{yearError}</span>}
+          {yearError && <p className='Error'>{yearError}</p>}
         </div>
 
         <button
+          className='button'
           onClick={onClickButton}
-        >button</button>
+        >
+          <span><img src='../public/'/></span>
+        </button>
       </form>
 
     </div>

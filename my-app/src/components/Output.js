@@ -1,23 +1,28 @@
-import React, { Component } from 'react';
+import React, { Component, useEffect, useState } from 'react';
+import Input from "./Input";
 
-function Output() {
+function Output( { date } ) {
+  const [ dayResult, setDayResult ] = useState('--');
+  const [ monthResult, setMonthResult ] = useState('--');
+  const [ yearResult, setYearResult ] = useState('--');
+  
 
   return (
     <div>
       <div>
-        <span>--</span>
+        <span>{dayResult}</span>
         <p>years</p>
         "years"
       </div>
 
       <div>
-        <span>--</span>
+        <span>{monthResult}</span>
         <p>months</p>
         "months"
       </div>
 
       <div>
-        <span>--</span>
+        <span>{yearResult}</span>
         <p>days</p>
         "days"
       </div>
