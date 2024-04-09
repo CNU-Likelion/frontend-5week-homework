@@ -1,0 +1,53 @@
+/* src/Input.css */
+.input {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.input > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.input h6 {
+  color: var(--Smokey-grey);
+  font-size: 0.75rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.input input {
+  font-size: 1rem;
+  padding: 0.75rem;
+  border: 1px solid var(--Light-grey);
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+}
+
+.input input:focus {
+  outline: none;
+  border-color: var(--Purple);
+}
+
+.error-message {
+  color: var(--Light-red);
+  font-size: 0.75rem;
+}
+
+/* Adjust the button style to match the provided image */
+.button {
+  background: var(--Purple);
+  color: var(--White);
+  border: none;
+  border-radius: 50%;
+  padding: 1rem;
+  cursor: pointer;
+  position: relative;
+  top: -2.5rem; /* Adjust as necessary */
+}
+
+/* Error styling */
+.input input.error {
+  border-color: var(--Light-red);
+}

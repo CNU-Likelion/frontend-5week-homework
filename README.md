@@ -1,22 +1,46 @@
-# 프론트엔드 멘토(Advice generator app)
+# Getting Started with Create React App
 
-[프론트엔드 멘토](https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFFpj-Q)
-![desktop-design](./design/desktop-design.jpg)
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## 💻 진행 방식
+## Available Scripts
 
-- 미션은 요구 사항, 과제 진행 요구 사항으로 구성되어있다.
-- 두 요구 사항을 만족해야한다.
+In the project directory, you can run:
 
-## 🧑‍💻 요구 사항
+### `npm start`
 
-- 개발은 React를 사용하여 진행한다.
-- 4주차 과제는 **4월 8일 자정**까지 제출한다.
-- 미션은 무조건 기한 내에 완료하지 못하더라도 제출해야한다.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-## 🚀 과제 진행 요구 사항
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-- 미션은 **frontend-5week-homework** 저장소를 fork하고 clone하여 시작한다.
-- 미션 완료 이후 `docs/README.md`에 미션을 통해 배운 내용들을 작성한다.
-- README.md 작성법은 [다음](https://commonmark.org/help/)을 참고한다.
-- 과제 진행 및 제출 방법은 **[미션 진행 가이드](https://www.notion.so/f0571981555d4509839b9db8d5382162?pvs=21)** 문서를 참고한다.
+### `npm test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
