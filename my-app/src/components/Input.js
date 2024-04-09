@@ -1,4 +1,5 @@
 import React, { Component, useEffect, useState } from 'react';
+import styles from "../components/Input.css";
 
 function Input() {
 
@@ -59,7 +60,7 @@ function Input() {
 
   return (
     <div>
-      <form>
+      <form className='form_container'>
         <div className='dayContainer'>
           <p className='dayTitle'>DAY</p>
           <input 
@@ -96,9 +97,7 @@ function Input() {
         <button
           className='button'
           onClick={onClickButton}
-        >
-          <span><img src='../public/'/></span>
-        </button>
+        >^</button>
       </form>
 
     </div>

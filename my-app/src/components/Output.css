@@ -1,0 +1,14 @@
+.outputDay, .outputMonth, .outputYear {
+  color: #854CFF;
+  font-size: 4rem;
+}
+
+.outputContainer {
+  display: flex;
+}
+
+.outputText {
+  margin: 0px 0px 0px 10px;
+  color: #040404;
+  font-size: 4rem;
+}
