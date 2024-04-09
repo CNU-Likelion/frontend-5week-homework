@@ -1,0 +1,14 @@
+/* src/components/Output.css */
+.output {
+  text-align: center;
+}
+
+.age-display h1 {
+  font-size: 60px;
+  font-style: italic;
+  margin: 0.5em 0; /* Adjust spacing based on your design */
+}
+
+.age-display span {
+  color: var(--Purple);
+}
